@@ -31,5 +31,4 @@ def main():
     print(np.e-e)
     print('Aproximação de Runge Kutta',r)
     print(np.e-r)
-
 main()
