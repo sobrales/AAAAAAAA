@@ -33,10 +33,8 @@ def f_teste2(t,x):
     A = np.array([[-2,-1,-1,-2],[1,-2,2,-1],[-1,-2,-2,-1],[2,-1,1,-2]])
     return np.matmul(A,x)
 
-
 def main():
     h = 1e-5
-<<<<<<< HEAD
     escolha = '1'
     if escolha == '1':
         t0, tf = 1.05, 3
@@ -48,13 +46,4 @@ def main():
     print('Aproximação de Euler',euler)'''
     kutta = Runge_Kutta(t0,tf,x0,h)
     print('Aproximação de Runge Kutta',kutta)
-
-=======
-    e = Euler(t0,tf,x0,h)
-    r = Runge_Kutta(t0,tf,x0,h)
-    print('Aproximação de Euler',e)
-    print(np.e-e)
-    print('Aproximação de Runge Kutta',r)
-    print(np.e-r)
->>>>>>> 6549e04ea7262947e1942749f7cc773ba91ff530
 main()
